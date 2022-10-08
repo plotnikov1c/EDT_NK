@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="153db4f7-19a9-4661-a3f3-5e9294589ab0">
+  <name>Конфигурация</name>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="1842a59a-d3ad-4054-afa1-0e0458a8c339"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="9d7d96cd-6c6b-41a5-94b9-e48d30842d5e"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="3da2e458-92f0-4016-88c2-7c26caf9c9cd"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="65aab727-d469-4114-82d1-304715d8ad67"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="4259093e-8cd7-4eb4-a466-7d371483a391"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="4da61d11-2864-4460-abf3-3afd684153dd"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="788b9514-3a25-4de2-ba6f-d17913daa616"/>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <compatibilityMode>8.3.18</compatibilityMode>
+  <languages uuid="07a81a27-6c1e-47cd-9e63-a0b1c551e92f">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <commonModules>CommonModule.РегламентныеЗаданияСервер</commonModules>
+  <commonModules>CommonModule.ПариснгЦенСервер</commonModules>
+  <scheduledJobs>ScheduledJob.АктуализироватьЦены</scheduledJobs>
+  <catalogs>Catalog.Книги</catalogs>
+  <catalogs>Catalog.Магазины</catalogs>
+  <enums>Enum.ТипКниги</enums>
+  <reports>Report.ЦеныКниг</reports>
+  <reports>Report.РазницаЦен</reports>
+  <reports>Report.НаличиеВМагазинах</reports>
+  <dataProcessors>DataProcessor.АктуализироватьЦены</dataProcessors>
+  <informationRegisters>InformationRegister.Цены</informationRegisters>
+</mdclass:Configuration>

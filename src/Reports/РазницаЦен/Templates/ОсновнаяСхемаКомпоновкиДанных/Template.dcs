@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Книга</dataPath>
+			<field>Книга</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипКниги</dataPath>
+			<field>ТипКниги</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Магазин</dataPath>
+			<field>Магазин</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазницаЦен</dataPath>
+			<field>РазницаЦен</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разница цен</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МаксимальнаяЦена</dataPath>
+			<field>МаксимальнаяЦена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимальная цена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МагазинСМинимальнойЦеной</dataPath>
+			<field>МагазинСМинимальнойЦеной</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Магазин с минимальной ценой</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МинимальнаяЦена</dataPath>
+			<field>МинимальнаяЦена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минимальная цена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МагазинСМаксимальнойЦеной</dataPath>
+			<field>МагазинСМаксимальнойЦеной</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Магазин с максимальной ценой</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЦеныСрезПоследних.Период КАК Период,
+	ЦеныСрезПоследних.Книга КАК Книга,
+	МИНИМУМ(ЦеныСрезПоследних.Цена) КАК Цена
+ПОМЕСТИТЬ ВтМинЦены
+ИЗ
+	РегистрСведений.Цены.СрезПоследних(,) КАК ЦеныСрезПоследних
+СГРУППИРОВАТЬ ПО
+	ЦеныСрезПоследних.Книга,
+	ЦеныСрезПоследних.Период
+
+ИНДЕКСИРОВАТЬ ПО
+	Период,
+	Книга,
+	Цена
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЦеныСрезПоследних.Период КАК Период,
+	ЦеныСрезПоследних.Книга КАК Книга,
+	МАКСИМУМ(ЦеныСрезПоследних.Цена) КАК Цена
+ПОМЕСТИТЬ ВтМаксЦена
+ИЗ
+	РегистрСведений.Цены.СрезПоследних КАК ЦеныСрезПоследних
+СГРУППИРОВАТЬ ПО
+	ЦеныСрезПоследних.Период,
+	ЦеныСрезПоследних.Книга
+
+ИНДЕКСИРОВАТЬ ПО
+	Период,
+	Книга,
+	Цена
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Цены.Книга КАК Книга,
+	Цены.ТипКниги КАК ТипКниги,
+	Цены.Магазин КАК Магазин,
+	Цены.Цена КАК Цена
+ПОМЕСТИТЬ ВтПерваяЦена
+ИЗ
+	РегистрСведений.Цены КАК Цены
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВтМинЦены КАК ВтМинЦены
+		ПО Цены.Период = ВтМинЦены.Период
+		И Цены.Книга = ВтМинЦены.Книга
+		И Цены.Цена = ВтМинЦены.Цена
+
+ИНДЕКСИРОВАТЬ ПО
+	Книга,
+	ТипКниги,
+	Цена
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Цены.Книга КАК Книга,
+	Цены.ТипКниги КАК ТипКниги,
+	Цены.Магазин КАК Магазин,
+	Цены.Цена КАК Цена
+ПОМЕСТИТЬ ВтВтораяЦена
+ИЗ
+	РегистрСведений.Цены КАК Цены
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВтМаксЦена КАК ВтМаксЦена
+		ПО Цены.Период = ВтМаксЦена.Период
+		И Цены.Книга = ВтМаксЦена.Книга
+		И Цены.Цена = ВтМаксЦена.Цена
+
+ИНДЕКСИРОВАТЬ ПО
+	Книга,
+	ТипКниги,
+	Цена
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВтПерваяЦена.Книга КАК Книга,
+	ВтПерваяЦена.ТипКниги КАК ТипКниги,
+	ВтПерваяЦена.Магазин КАК МагазинСМинимальнойЦеной,
+	ВтПерваяЦена.Цена КАК МинимальнаяЦена,
+	ВтВтораяЦена.Магазин КАК МагазинСМаксимальнойЦеной,
+	ВтВтораяЦена.Цена КАК МаксимальнаяЦена,
+	ВЫБОР
+		КОГДА ВтВтораяЦена.Цена &lt;&gt; 0
+		И ВтПерваяЦена.Цена &lt;&gt; 0
+			ТОГДА ВтВтораяЦена.Цена / ВтПерваяЦена.Цена
+		ИНАЧЕ ВтВтораяЦена.Цена
+	КОНЕЦ КАК РазницаЦен
+ИЗ
+	ВтПерваяЦена КАК ВтПерваяЦена
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВтВтораяЦена КАК ВтВтораяЦена
+		ПО ВтПерваяЦена.Книга = ВтВтораяЦена.Книга
+		И ВтПерваяЦена.ТипКниги = ВтВтораяЦена.ТипКниги</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Книга</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипКниги</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МагазинСМинимальнойЦеной</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МинимальнаяЦена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МагазинСМаксимальнойЦеной</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МаксимальнаяЦена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РазницаЦен</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>РазницаЦен</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

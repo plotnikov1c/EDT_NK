@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4319bb2f-5eb0-413c-9b04-2c4f7a3da983">
+  <producedTypes>
+    <objectType typeId="49addd2f-d939-462e-8c14-93a1698b444c" valueTypeId="ec52dc78-42fa-467e-b61d-8c0b1d98137d"/>
+    <managerType typeId="71df473b-10e4-46e3-8f6f-b623353d79d5" valueTypeId="bceeaa58-48af-4f93-9e61-3d53ae148c9e"/>
+  </producedTypes>
+  <name>НаличиеВМагазинах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Наличие в магазинах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.НаличиеВМагазинах.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="1b83e5e8-709b-4dc7-b08f-62c8b0f48149">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

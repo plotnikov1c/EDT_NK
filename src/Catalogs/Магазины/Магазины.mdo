@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="344b28a3-f263-4011-bdda-c7dc4ce16c9a">
+  <producedTypes>
+    <objectType typeId="47e41c51-cdd0-4619-9873-219e574d6c83" valueTypeId="b8d18be2-a371-43cf-bb6c-ef194bbadc9b"/>
+    <refType typeId="52ef5282-a3f1-416b-b974-7a1e87b736e5" valueTypeId="76b0e6e4-60d5-42b9-bd7d-89f967ace4d3"/>
+    <selectionType typeId="45bb1459-c81f-4c17-b484-9a5f1527efaa" valueTypeId="086746ea-9380-4942-9e5d-62cbb93bfdcf"/>
+    <listType typeId="7c3a5db8-2d30-4223-a29a-e083d98653a2" valueTypeId="07c1c705-1c63-43d2-b212-13a89b7e8c20"/>
+    <managerType typeId="43478192-4f8b-40e5-8d40-8e008835115b" valueTypeId="2da0b642-03cd-46bc-a177-4f8f69aa4412"/>
+  </producedTypes>
+  <name>Магазины</name>
+  <synonym>
+    <key>ru</key>
+    <value>Магазины</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Магазины.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Магазины.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Магазин</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="eb09d39b-c8bc-4489-a76c-665625ee033d">
+      <name>Book24</name>
+      <description>Book24</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="934e2969-02ac-4726-bcbe-fdc6221f0d1b">
+      <name>Bookriver</name>
+      <description>Bookriver</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="dc137a20-f499-4975-9f4d-403e50a34694">
+      <name>OZON</name>
+      <description>OZON</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="8b387891-5b96-4692-96c3-b5a7c9ecf864">
+      <name>Буквоед</name>
+      <description>Буквоед</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="3ca7cfc7-5790-48a3-82fb-84f45c327336">
+      <name>Лабиринт</name>
+      <description>Лабиринт</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="c4073231-e5ae-44d9-a73f-e6e769abddf9">
+      <name>Литмаркет</name>
+      <description>Литмаркет</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="c5077608-c4a9-4b4b-a16e-df477483adfa">
+      <name>ЛитРес</name>
+      <description>ЛитРес</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="8c96466e-7878-4a54-ba06-7bc50b4327f6">
+      <name>ПризрачныеМиры</name>
+      <description>Призрачные миры</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="63ae7e87-45ce-448d-ad85-076808c0eab4">
+      <name>СберМегаМаркет</name>
+      <description>СберМегаМаркет</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="368d0905-5b81-4f05-8975-bcb4e40771a0">
+      <name>ЧитайГород</name>
+      <description>Читай-город</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

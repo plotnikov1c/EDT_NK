@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75d7cc80-18c7-4755-a4ab-080fbb8e0980">
+  <name>АктуализироватьЦены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуализировать цены</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.АктуализироватьЦены</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

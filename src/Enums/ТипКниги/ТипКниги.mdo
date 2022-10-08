@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="11bfb1fa-c9a0-4952-a5bb-daa679327447">
+  <producedTypes>
+    <refType typeId="98d08fc7-46ed-4ee9-bbf1-edf4308dd78d" valueTypeId="d06df837-4f2f-4c2f-a507-2649a9bd7def"/>
+    <listType typeId="7837235f-b3fa-4aa6-8944-c3dea027a9fc" valueTypeId="e25e56cc-a337-4f17-a0df-9249b2aae781"/>
+    <managerType typeId="03409b40-9732-422d-be7e-defae17f61e8" valueTypeId="388d48cf-fd87-4ab0-8fe2-fc7a44d82ac5"/>
+  </producedTypes>
+  <name>ТипКниги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип книги</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e780935b-81ba-4b20-85e9-a9b02c135172">
+    <name>БумажнаяКнига</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бумажная книга</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2e0a6628-566d-438c-8ec3-7b7b8b321f72">
+    <name>ЭлектроннаяКнига</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронная книга</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ec44c49a-19d3-4403-b11e-539b21b58996">
+    <name>Аудиокнига</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аудиокнига</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

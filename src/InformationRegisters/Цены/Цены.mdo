@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7aca3c69-dd35-4c82-98ce-f2cca7292b4f">
+  <producedTypes>
+    <selectionType typeId="22ea5e82-0ca1-4be1-af58-1abe5313b175" valueTypeId="f3ca80fc-c72d-4e1f-a94b-1db283e08968"/>
+    <listType typeId="fd0db0d3-6647-49d0-9c34-598bf0fc1a0f" valueTypeId="9f7b61be-b378-4a4d-9735-fb9dc31095f1"/>
+    <managerType typeId="62738d5d-26a8-4e0f-97df-17a9ebb7218e" valueTypeId="959808cd-195e-4e0a-87a0-024c80c394a4"/>
+    <recordSetType typeId="b08ab33f-28f8-4869-91d4-14618b3e79c5" valueTypeId="9e0deca3-ee05-469f-a9e2-84e2cd8d061d"/>
+    <recordKeyType typeId="c976cbe5-5529-4cb7-92fe-7fa85bdbdc67" valueTypeId="7096551e-d6ba-4bf1-9a19-b4312c90c531"/>
+    <recordType typeId="c7adfcd8-0045-4b89-aeaf-6996d37f8b8c" valueTypeId="b5b0dcfd-db4e-4ced-a0bb-772225254036"/>
+    <recordManagerType typeId="861f01e4-7ad7-43c0-a188-2c1e5fd33654" valueTypeId="becf8eaa-87b7-433e-a807-e4ae5d89aa12"/>
+  </producedTypes>
+  <name>Цены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Цена</value>
+  </recordPresentation>
+  <resources uuid="61bec332-7952-4ca8-9a87-7907a2b43eec">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="0cf42da2-ee0c-4f52-af78-5bf3b46aaf3c">
+    <name>Гиперссылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гиперссылка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="61a4de28-d6f2-42f9-b739-f7699ed03104">
+    <name>Книга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Книга</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Книги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e07d11be-0a0d-4589-af5d-a71531db6ffd">
+    <name>ТипКниги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип книги</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипКниги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="495f7be4-38a4-444a-b29d-06d3cc104b24">
+    <name>Магазин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Магазин</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Магазины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
