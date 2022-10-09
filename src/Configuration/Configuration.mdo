@@ -38,9 +38,9 @@
   <commonModules>CommonModule.ПариснгЦенСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
   <scheduledJobs>ScheduledJob.АктуализироватьЦены</scheduledJobs>
-  <catalogs>Catalog.chat_id</catalogs>
   <catalogs>Catalog.Книги</catalogs>
   <catalogs>Catalog.Магазины</catalogs>
+  <catalogs>Catalog.ЧатыТелеграмм</catalogs>
   <enums>Enum.ТипКниги</enums>
   <reports>Report.ЦеныКниг</reports>
   <reports>Report.РазницаЦен</reports>

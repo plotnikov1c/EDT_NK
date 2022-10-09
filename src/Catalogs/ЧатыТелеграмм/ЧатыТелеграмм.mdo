@@ -7,21 +7,21 @@
     <listType typeId="28e8ccf0-122e-423a-83b4-a3d0a4485054" valueTypeId="0bcfe870-0886-451b-8359-04e75bdac21c"/>
     <managerType typeId="4cc5bd3a-b481-43e9-b3ff-77074cf2b380" valueTypeId="4e655898-1fc5-470b-9fad-68d97549faef"/>
   </producedTypes>
-  <name>chat_id</name>
+  <name>ЧатыТелеграмм</name>
   <synonym>
     <key>ru</key>
-    <value>chat_id</value>
+    <value>Чаты телеграм</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Catalog.chat_id.StandardAttribute.Code</inputByString>
-  <inputByString>Catalog.chat_id.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЧатыТелеграмм.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ЧатыТелеграмм.StandardAttribute.Description</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>chat_id</value>
+    <value>Чат телеграмм</value>
   </objectPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
