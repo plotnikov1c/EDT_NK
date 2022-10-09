@@ -8,6 +8,7 @@
   <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="4259093e-8cd7-4eb4-a466-7d371483a391"/>
   <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="4da61d11-2864-4460-abf3-3afd684153dd"/>
   <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="788b9514-3a25-4de2-ba6f-d17913daa616"/>
+  <configurationExtensionCompatibilityMode>8.3.21</configurationExtensionCompatibilityMode>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
@@ -35,7 +36,9 @@
   </languages>
   <commonModules>CommonModule.РегламентныеЗаданияСервер</commonModules>
   <commonModules>CommonModule.ПариснгЦенСервер</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
   <scheduledJobs>ScheduledJob.АктуализироватьЦены</scheduledJobs>
+  <catalogs>Catalog.chat_id</catalogs>
   <catalogs>Catalog.Книги</catalogs>
   <catalogs>Catalog.Магазины</catalogs>
   <enums>Enum.ТипКниги</enums>
