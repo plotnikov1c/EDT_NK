@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1aa361a-9344-40dc-9d39-184ccf7fbdb2">
+  <producedTypes>
+    <objectType typeId="7568e2ee-ed02-40cb-a1d3-0dc44b0f3109" valueTypeId="59fd4897-f0c0-4325-838a-6e1008d9184f"/>
+    <refType typeId="d42bdf22-4950-49fa-a72f-edaa41ccdc59" valueTypeId="bbd6b281-e974-4de6-bfd5-2a8ab3b99ab4"/>
+    <selectionType typeId="e80331a4-f161-4275-b5d6-093c78fe08f6" valueTypeId="c9696597-4539-4c31-8281-c1d33d4d9224"/>
+    <listType typeId="28e8ccf0-122e-423a-83b4-a3d0a4485054" valueTypeId="0bcfe870-0886-451b-8359-04e75bdac21c"/>
+    <managerType typeId="4cc5bd3a-b481-43e9-b3ff-77074cf2b380" valueTypeId="4e655898-1fc5-470b-9fad-68d97549faef"/>
+  </producedTypes>
+  <name>chat_id</name>
+  <synonym>
+    <key>ru</key>
+    <value>chat_id</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.chat_id.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.chat_id.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>chat_id</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>14</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="4be27299-93b2-476c-a45a-35c4e817b970">
+      <name>Себе</name>
+      <description>Себе</description>
+      <code xsi:type="core:StringValue">
+        <value>113833338</value>
+      </code>
+    </items>
+    <items id="eea679c0-cd83-4f2d-9968-a1507522b541">
+      <name>Трио</name>
+      <description>Трио</description>
+      <code xsi:type="core:StringValue">
+        <value>-1001763722348</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>
