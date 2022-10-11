@@ -136,6 +136,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="e29e2053-c8d7-4d0d-abed-c826f457f95a">
+    <name>Обложка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обложка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="909a592d-40b1-4567-85ae-38bd1db29355">
     <producedTypes>
       <objectType typeId="ecf610f1-130e-4b2c-af3e-1d3bb9f84206" valueTypeId="701ec635-c28d-4601-8d3a-f1db1d76979e"/>
@@ -185,6 +203,31 @@
         <stringQualifiers>
           <length>1000</length>
         </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="d912f3e8-8bfc-420c-a158-4e9da66945c8">
+    <producedTypes>
+      <objectType typeId="950e583a-b694-4bad-b49e-262659f17adf" valueTypeId="19474b3b-1b83-4d87-9b3c-0a88036528f1"/>
+      <rowType typeId="3f3bcfd8-7005-434c-b6b4-36461b4f4e93" valueTypeId="e1b86979-2e04-4c47-95f9-2458699dc7c9"/>
+    </producedTypes>
+    <name>Исполнители</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнители</value>
+    </synonym>
+    <attributes uuid="3aaa295e-35c8-4033-901d-e6ea126e0749">
+      <name>Исполнитель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Исполнитель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Исполнители</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

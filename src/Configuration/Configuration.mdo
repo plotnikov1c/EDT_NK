@@ -38,13 +38,16 @@
   <commonModules>CommonModule.ПариснгЦенСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
   <scheduledJobs>ScheduledJob.АктуализироватьЦены</scheduledJobs>
+  <catalogs>Catalog.Исполнители</catalogs>
   <catalogs>Catalog.Книги</catalogs>
   <catalogs>Catalog.Магазины</catalogs>
   <catalogs>Catalog.ЧатыТелеграмм</catalogs>
   <enums>Enum.ТипКниги</enums>
+  <enums>Enum.ВидыИсполнителей</enums>
   <reports>Report.ЦеныКниг</reports>
   <reports>Report.РазницаЦен</reports>
   <reports>Report.НаличиеВМагазинах</reports>
   <dataProcessors>DataProcessor.АктуализироватьЦены</dataProcessors>
+  <dataProcessors>DataProcessor.СформироватьИЗаписатьHTML</dataProcessors>
   <informationRegisters>InformationRegister.Цены</informationRegisters>
 </mdclass:Configuration>

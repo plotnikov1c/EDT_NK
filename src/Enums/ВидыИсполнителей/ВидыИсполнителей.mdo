@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="018185d5-5652-4382-a69e-a32660a46cdf">
+  <producedTypes>
+    <refType typeId="97912ce8-dea2-497c-80a7-35875d8af1e8" valueTypeId="7611933f-288f-4404-b8f8-208b0c25fbf8"/>
+    <listType typeId="512e2445-9a37-4203-b6bf-355cd0da1f3a" valueTypeId="2347010d-4769-42c1-9f08-204244dd7108"/>
+    <managerType typeId="bd3c8b17-f023-4365-a375-91bf044e5381" valueTypeId="47325a4d-ea34-4538-a843-b16726185909"/>
+  </producedTypes>
+  <name>ВидыИсполнителей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды исполнителей</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="89377faf-204e-40e4-9672-ede595b36186">
+    <name>Редактор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4c94399b-dbb3-4710-8b48-163dbc3c5dea">
+    <name>Иллюстратор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иллюстратор</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="aeebea58-cb5d-4610-bd9b-9c57e8a88c42">
+    <name>Чтец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чтец</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

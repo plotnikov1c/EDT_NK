@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7abf860f-32d0-4379-89d6-aec4a5d1a4dc">
+  <producedTypes>
+    <objectType typeId="fd4a3a75-8069-46ac-8d2b-bbb23c32d5e6" valueTypeId="c7747c27-214c-456e-98e3-f1aad19c7aa7"/>
+    <refType typeId="54f63706-437c-49d5-866d-8f496aaf5a8f" valueTypeId="d2ba86da-ce3f-4033-986f-b009d980fe73"/>
+    <selectionType typeId="46d91654-3f3c-4893-987c-a9f59ed3ee10" valueTypeId="22ed0e5d-1da7-4ea4-b2a7-f53ef41ca468"/>
+    <listType typeId="2c8ccd72-2321-468c-be1b-5bb12b2dc923" valueTypeId="d0660c47-5c2e-4803-90ad-d7d7db19ef4f"/>
+    <managerType typeId="bb283d30-a7e3-4a7b-a28e-1a1ae2977c8d" valueTypeId="90d462d1-6a8a-4498-9446-7e7cf1aa205f"/>
+  </producedTypes>
+  <name>Исполнители</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исполнители</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Исполнители.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Исполнители.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Исполнитель</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="23932aa5-9f26-4018-bdcd-b28eb901b6da">
+    <name>ВидИсполнителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид исполнителя</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыИсполнителей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dfa444af-2e88-4a16-8207-6204eec3e2f4">
+    <name>Гиперссылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гиперссылка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
