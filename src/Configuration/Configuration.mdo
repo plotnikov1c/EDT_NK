@@ -37,6 +37,7 @@
   <commonModules>CommonModule.РегламентныеЗаданияСервер</commonModules>
   <commonModules>CommonModule.ПариснгЦенСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
+  <commonModules>CommonModule.ОбщийМодуль</commonModules>
   <scheduledJobs>ScheduledJob.АктуализироватьЦены</scheduledJobs>
   <catalogs>Catalog.Исполнители</catalogs>
   <catalogs>Catalog.Книги</catalogs>
