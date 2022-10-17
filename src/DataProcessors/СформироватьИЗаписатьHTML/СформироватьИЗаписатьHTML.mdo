@@ -7,7 +7,7 @@
   <name>СформироватьИЗаписатьHTML</name>
   <synonym>
     <key>ru</key>
-    <value>Сформировать и записать HTML</value>
+    <value>Записать books.html</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.СформироватьИЗаписатьHTML.Form.Форма</defaultForm>

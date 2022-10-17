@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="153db4f7-19a9-4661-a3f3-5e9294589ab0">
-  <name>Конфигурация</name>
+  <name>Novakamskaya</name>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="1842a59a-d3ad-4054-afa1-0e0458a8c339"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="9d7d96cd-6c6b-41a5-94b9-e48d30842d5e"/>
   <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="3da2e458-92f0-4016-88c2-7c26caf9c9cd"/>
@@ -37,8 +37,11 @@
   <commonModules>CommonModule.РегламентныеЗаданияСервер</commonModules>
   <commonModules>CommonModule.ПариснгЦенСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
-  <commonModules>CommonModule.ОбщийМодуль</commonModules>
+  <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
   <scheduledJobs>ScheduledJob.АктуализироватьЦены</scheduledJobs>
+  <constants>Constant.ПутьКОбложкам</constants>
+  <constants>Constant.ПутьКCloudflare</constants>
+  <constants>Constant.ПутьКЗенскреб</constants>
   <catalogs>Catalog.Исполнители</catalogs>
   <catalogs>Catalog.Книги</catalogs>
   <catalogs>Catalog.Магазины</catalogs>
@@ -50,5 +53,7 @@
   <reports>Report.НаличиеВМагазинах</reports>
   <dataProcessors>DataProcessor.АктуализироватьЦены</dataProcessors>
   <dataProcessors>DataProcessor.СформироватьИЗаписатьHTML</dataProcessors>
+  <dataProcessors>DataProcessor.ПорядокДляСайта</dataProcessors>
+  <dataProcessors>DataProcessor.КонсольЗаданий</dataProcessors>
   <informationRegisters>InformationRegister.Цены</informationRegisters>
 </mdclass:Configuration>

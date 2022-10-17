@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c7e7755-5bd0-4ba8-97d0-7780de868aee">
+  <producedTypes>
+    <managerType typeId="f8f3c255-4ff2-41d9-9485-ad5b3e364956" valueTypeId="f519b28c-0944-4fec-8773-965e6123dcb1"/>
+    <valueManagerType typeId="5266e642-a11b-4698-8099-736c01e42c3b" valueTypeId="91ac34fc-ad05-4c9f-aad6-167eb1b72c90"/>
+    <valueKeyType typeId="0dc44fa4-e14a-43d7-9fa6-e9b0503172a0" valueTypeId="4dd988ff-279d-4672-930b-711619e144e9"/>
+  </producedTypes>
+  <name>ПутьКCloudflare</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь к cloudflare</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

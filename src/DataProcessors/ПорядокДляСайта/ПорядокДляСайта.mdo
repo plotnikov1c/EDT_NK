@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="952b6ff6-e328-4a02-b010-7f4a8ae7d4a6">
+  <producedTypes>
+    <objectType typeId="486f7b02-b694-4c17-b81a-eec090510184" valueTypeId="c26477c4-0e73-409d-a2d5-bda81c697322"/>
+    <managerType typeId="152450cf-65a1-4811-8989-69705b72fca5" valueTypeId="ac42839e-84b1-4ddb-a7fd-f8b3df691f45"/>
+  </producedTypes>
+  <name>ПорядокДляСайта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порядок для сайта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПорядокДляСайта.Form.Форма</defaultForm>
+  <tabularSections uuid="d02f5f36-4a19-4a81-8278-769399a771e6">
+    <producedTypes>
+      <objectType typeId="59dca343-d6e2-4c3d-b6cf-57d81b5081d2" valueTypeId="608d2a46-8bff-4271-9c8f-3560484e29ff"/>
+      <rowType typeId="c7a1c135-3e94-4ebe-9bdb-892fb0795864" valueTypeId="57880393-7c3a-4c13-9f1e-86ae64323333"/>
+    </producedTypes>
+    <name>Книги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Книги</value>
+    </synonym>
+    <attributes uuid="c5524d73-3f2f-4a3f-93ec-fdf3a9685391">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Книга</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Книги</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="7f23f75e-1a77-447a-9206-cf59021fa019">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

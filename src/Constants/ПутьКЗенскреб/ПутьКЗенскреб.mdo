@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef052dc2-92ba-43c1-b252-3b4af5b90ec7">
+  <producedTypes>
+    <managerType typeId="597c8d71-e291-45de-87ff-4c27468459d5" valueTypeId="2efd2e33-eb91-4d43-a09e-8ba01170dfb2"/>
+    <valueManagerType typeId="c9defd12-3ea6-45c1-9720-e2c1e7940693" valueTypeId="fc7eb840-2867-4ece-b9ed-4571d52c4ba7"/>
+    <valueKeyType typeId="f5e35df8-1d5c-4b06-b214-dadef7617cc1" valueTypeId="f9d87454-3bda-4d05-802f-16783ceb61a5"/>
+  </producedTypes>
+  <name>ПутьКЗенскреб</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь к зенскреб</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
