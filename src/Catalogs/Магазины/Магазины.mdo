@@ -103,6 +103,34 @@
         <value>000000006</value>
       </code>
     </items>
+    <items id="2f30ae2f-35ef-46f7-af8c-26bfe1820971">
+      <name>Wildberries</name>
+      <description>Wildberries</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="87160208-dd57-4ca2-a561-0a24c7ee321f">
+      <name>COMBOOK</name>
+      <description>COMBOOK</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="83acb85d-fc64-4c24-82b4-7570fb2f20bc">
+      <name>СимаЛенд</name>
+      <description>Сима-ленд</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+    <items id="b9f27140-bfaa-4f73-859d-f7ec9d5f30bd">
+      <name>Майшоп</name>
+      <description>Майшоп</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <quickChoice>true</quickChoice>

@@ -7,7 +7,7 @@
   <name>ПорядокДляСайта</name>
   <synonym>
     <key>ru</key>
-    <value>Порядок для сайта</value>
+    <value>Порядок книг для сайта</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.ПорядокДляСайта.Form.Форма</defaultForm>

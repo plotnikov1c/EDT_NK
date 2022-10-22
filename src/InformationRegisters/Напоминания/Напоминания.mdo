@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5dd84d78-297d-4240-a313-e32eeed6b9ef">
+  <producedTypes>
+    <selectionType typeId="da57abcc-1aab-497c-82e9-5972ff982cd3" valueTypeId="c8784d7c-7838-478a-a84c-cd1d5d653dc7"/>
+    <listType typeId="0cc897ae-9480-4993-8f09-59e6b2f8a205" valueTypeId="ab326809-cf57-4222-a0bd-c7c448302a1b"/>
+    <managerType typeId="082358d7-31db-4d01-bc7d-2871cc1f1431" valueTypeId="ef9a312a-4200-4aa6-bece-b8df2468a7e2"/>
+    <recordSetType typeId="5924baed-76ec-45fa-93ea-db3059e0ea26" valueTypeId="b23ee7f7-cb99-48e8-927b-11d011a17a7e"/>
+    <recordKeyType typeId="ffcee6b0-bf5d-42d3-9429-f4e1ff47d879" valueTypeId="8d41d21b-49a2-4b3a-9b23-e83fb4684f37"/>
+    <recordType typeId="5d82c43a-3069-4692-b69b-a29a50d92224" valueTypeId="f1690cde-f28a-485c-8060-c62fd36d16a0"/>
+    <recordManagerType typeId="2ed7613b-6b40-4b90-bbff-8ba55b67b730" valueTypeId="3275faab-c42f-4e25-a0eb-38237205d813"/>
+  </producedTypes>
+  <name>Напоминания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Напоминания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1874f18e-17b3-47ac-884e-21142133f221">
+    <name>ЧатТелеграмм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чат телеграмм</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЧатыТелеграмм</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2d6688c9-dc25-4c61-ba18-439a51d26387">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="45fe8cb1-b3f4-4eac-b0bd-aa5493dffb13">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="27348be5-5168-4ed7-96a0-41fbee9ccbaf">
+    <name>Текст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

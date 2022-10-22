@@ -38,7 +38,12 @@
   <commonModules>CommonModule.ПариснгЦенСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
   <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
+  <commonModules>CommonModule.СтандартныеПодсистемыКлиентСерверЛокализация</commonModules>
+  <commonModules>CommonModule.СтроковыеФункции</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияСлужебныйКлиентСервер</commonModules>
+  <eventSubscriptions>EventSubscription.ПодпискаНаСобытие</eventSubscriptions>
   <scheduledJobs>ScheduledJob.АктуализироватьЦены</scheduledJobs>
+  <scheduledJobs>ScheduledJob.ОтправитьНапоминания</scheduledJobs>
   <constants>Constant.ПутьКОбложкам</constants>
   <constants>Constant.ПутьКCloudflare</constants>
   <constants>Constant.ПутьКЗенскреб</constants>
@@ -56,4 +61,5 @@
   <dataProcessors>DataProcessor.ПорядокДляСайта</dataProcessors>
   <dataProcessors>DataProcessor.КонсольЗаданий</dataProcessors>
   <informationRegisters>InformationRegister.Цены</informationRegisters>
+  <informationRegisters>InformationRegister.Напоминания</informationRegisters>
 </mdclass:Configuration>
