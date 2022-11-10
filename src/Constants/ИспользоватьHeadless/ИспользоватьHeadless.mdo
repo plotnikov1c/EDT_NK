@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dfef4234-b7e1-47c0-bea6-85fd7a6745d6">
+  <producedTypes>
+    <managerType typeId="c46587f2-4abb-4264-a858-dc2cc88ed1cf" valueTypeId="1b2f4c2c-1605-48f3-ba28-7de6145abd45"/>
+    <valueManagerType typeId="37ce0fd3-d550-4a31-b68f-a6305b951266" valueTypeId="4cb22ec4-4cc8-4201-986e-da390fc52e6c"/>
+    <valueKeyType typeId="50b8c72f-86e4-4714-9889-08fcd16348bf" valueTypeId="8e13600a-e4fd-4949-bce2-3dd30e76a202"/>
+  </producedTypes>
+  <name>ИспользоватьHeadless</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать --headless</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

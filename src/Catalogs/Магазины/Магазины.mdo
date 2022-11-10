@@ -131,6 +131,20 @@
         <value>000000014</value>
       </code>
     </items>
+    <items id="159cbe98-cbfa-438b-a44d-979d35dcf37a">
+      <name>AliExpress</name>
+      <description>AliExpress</description>
+      <code xsi:type="core:StringValue">
+        <value>000000015</value>
+      </code>
+    </items>
+    <items id="3cb709e3-b8d7-439c-868c-ba32ccc07c5d">
+      <name>ЯндексМаркет</name>
+      <description>Яндекс Маркет</description>
+      <code xsi:type="core:StringValue">
+        <value>000000016</value>
+      </code>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <quickChoice>true</quickChoice>

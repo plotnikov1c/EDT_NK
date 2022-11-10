@@ -47,6 +47,7 @@
   <constants>Constant.ПутьКОбложкам</constants>
   <constants>Constant.ПутьКCloudflare</constants>
   <constants>Constant.ПутьКЗенскреб</constants>
+  <constants>Constant.ИспользоватьHeadless</constants>
   <catalogs>Catalog.Исполнители</catalogs>
   <catalogs>Catalog.Книги</catalogs>
   <catalogs>Catalog.Магазины</catalogs>
